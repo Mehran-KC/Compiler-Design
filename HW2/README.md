@@ -22,19 +22,19 @@ Make sure you have Python and ANTLR4 installed on your machine.
    pip install antlr4-python3-runtime
 ```
 ### Running the Example
-1. Clone this repository:
+1.  #### Clone this repository:
 ```bash
    git clone https://github.com/Mehran-KC/Compiler-Design.git
    cd Compiler-Design/HW2
    ```
-[Screenshot-from-2023-12-09-01-03-40.png](https://postimg.cc/N2409CLM)
+[![Screenshot-from-2023-12-09-01-03-40.png](https://i.postimg.cc/PNGv7Bjm/Screenshot-from-2023-12-09-01-03-40.png)](https://postimg.cc/N2409CLM)
 
-2. Run the Main.py script:
+2.  #### Run the Main.py script:
 ```bash
    python Main.py
 ```
-[Screenshot-from-2023-12-09-01-04-05.png](https://postimg.cc/t7tdNXx1)
+[![Screenshot-from-2023-12-09-01-04-05.png](https://i.postimg.cc/NGZNYFGx/Screenshot-from-2023-12-09-01-04-05.png)](https://postimg.cc/t7tdNXx1)
 
-** This will parse the input string 'Hello \n Mehran' according to the defined grammar and print the parse tree. **
+#### This will parse the input string 'Hello \n Mehran' according to the defined grammar and print the parse tree.
 
 ### To use a different input, modify the input_stream in the Main.py script.
