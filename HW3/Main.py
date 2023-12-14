@@ -15,6 +15,8 @@ def main():
             print("Found email:", token.text)
         if(token.type == 4):
             print("MELLI CODE Found:", token.text)
+        if(token.type == 5):
+            print("Valid URL ---->", token.text)
     token_stream = CommonTokenStream(lexer)
     parser = TextRecognizerParser(token_stream)
     tree = parser.emails()

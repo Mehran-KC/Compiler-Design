@@ -35,5 +35,14 @@ class TextRecognizerListener(ParseTreeListener):
         pass
 
 
+    # Enter a parse tree produced by TextRecognizerParser#url.
+    def enterUrl(self, ctx:TextRecognizerParser.UrlContext):
+        pass
+
+    # Exit a parse tree produced by TextRecognizerParser#url.
+    def exitUrl(self, ctx:TextRecognizerParser.UrlContext):
+        pass
+
+
 
 del TextRecognizerParser

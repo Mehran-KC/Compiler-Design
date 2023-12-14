@@ -4,15 +4,18 @@ grammar TextRecognizer;
 COLON: ':';
 COMMA: ',';
 
-fragment DIGIT: [0-9];
 fragment LOCAL_SUBPART : [a-zA-Z0-9._%+-]+;
 fragment DOMAIN_SUBPART : [a-zA-Z0-9.-]+;
 
 EMAIL: LOCAL_SUBPART '@' DOMAIN_SUBPART '.' DOMAIN_SUBPART;
-MELLI_NUMBER: DIGIT+;
+MELLI_NUMBER: DIGIT DIGIT DIGIT DIGIT DIGIT DIGIT DIGIT DIGIT DIGIT DIGIT;
+URL: (PROTOCOL 'www.' LOCAL_SUBPART '.' (DOMAIN_SUBPART | DOMAIN_SUBPART '/' DOMAIN_SUBPART+)) | (PROTOCOL LOCAL_SUBPART '.' (DOMAIN_SUBPART | DOMAIN_SUBPART '/' DOMAIN_SUBPART+)) | ('www.' LOCAL_SUBPART '.' (DOMAIN_SUBPART | DOMAIN_SUBPART '/' DOMAIN_SUBPART+)) | (LOCAL_SUBPART '.' (DOMAIN_SUBPART | DOMAIN_SUBPART '/' DOMAIN_SUBPART+));
+PROTOCOL: 'http://' | 'https://';
 
-emails: (email | melli_number) (COMMA (email | melli_number))*; // Updated rule for multiple emails
-email: EMAIL {print("**email found**")};
-melli_number : MELLI_NUMBER;
+emails: (email | melli_number | url | EOF) (COMMA (email | melli_number | url | EOF))*;
+email: EMAIL;
+melli_number: MELLI_NUMBER;
+url: URL;
 
-WS: [\t\r\n]+ -> skip;
+DIGIT: [0-9];
+WS: [ \t\r\n ]+ -> skip;
