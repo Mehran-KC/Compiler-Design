@@ -1,0 +1,7 @@
+COLON=1
+COMMA=2
+EMAIL=3
+MELLI_NUMBER=4
+WS=5
+':'=1
+','=2
