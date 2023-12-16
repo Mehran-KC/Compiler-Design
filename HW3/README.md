@@ -31,7 +31,6 @@ Make sure to include `antlr4-python3-runtime` in the list of dependencies to ens
 pip install rich antlr4 antlr4-python3-runtime
 ```
 
-Once you have installed the dependencies, you can proceed to run the text recognizer script as described in the "Usage" section.
 ## Usage
 
 To run the text recognizer script, execute the following command:
@@ -61,6 +60,7 @@ The ANTLR grammar file (`TextRecognizer.g4`) defines the rules for recognizing e
 ## Example Output
 
 The script generates a tree structure to represent the recognized patterns. Additionally, a table is displayed using the `rich` library, providing a comprehensive view of the recognized text patterns.
+[![Screenshot-from-2023-12-16-04-45-49.png](https://i.postimg.cc/XYbQ1ZNs/Screenshot-from-2023-12-16-04-45-49.png)](https://postimg.cc/XpsfpYC5)
 
 Feel free to explore and modify the input text file to test different scenarios and observe the script's recognition capabilities.
 
