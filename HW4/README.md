@@ -70,6 +70,8 @@ if __name__ == '__main__':
     walker.walk(listener, tree)
 ```
 
+[![Screenshot-from-2023-12-17-03-04-41.png](https://i.postimg.cc/x8fT3Btf/Screenshot-from-2023-12-17-03-04-41.png)](https://postimg.cc/5YrVx7hT)
+
 Replace `"YourPassword123!"` with the password you want to validate. The script will output whether the password is valid or not.
 
 Feel free to customize the ANTLR grammar or the Python script according to your specific requirements.
