@@ -42,6 +42,7 @@ Enter the arithmetic expression when prompted. The calculator will parse the exp
 input_expr = "3*2+6-(7/9)+7^3*9-10"
 ```
 For input of `3*2+6-(7/9)+7^3*9-10` output should be like image below:
+
 [![Screenshot-from-2023-12-22-13-40-18.png](https://i.postimg.cc/0QKTDCFN/Screenshot-from-2023-12-22-13-40-18.png)](https://postimg.cc/CBYrVbFy)
 
 You can change the input in Main.py `input_expr` in line 46.
