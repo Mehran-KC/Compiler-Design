@@ -44,6 +44,8 @@ input_expr = "3*2+6-(7/9)+7^3*9-10"
 For input of `3*2+6-(7/9)+7^3*9-10` output should be like image below:
 [![Screenshot-from-2023-12-22-13-22-35.png](https://i.postimg.cc/vHW7N6fS/Screenshot-from-2023-12-22-13-22-35.png)](https://postimg.cc/tY4V1Jrh)
 
+You can change the input in Main.py `input_expr` in line 46.
+
 ### Grammar
 
 The calculator grammar is defined in the `Calculator.g4` file. It includes rules for numbers, basic arithmetic operations, parentheses, and exponentiation.
