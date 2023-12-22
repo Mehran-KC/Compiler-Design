@@ -52,4 +52,4 @@ tree = parser.expr()
 
 eval_visitor = CalculatorEvalVisitor()
 result = eval_visitor.visit(tree)
-print(f"Result: {result}")
+print(f"Result of {input_expr} = {result}")
