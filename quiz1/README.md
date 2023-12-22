@@ -15,9 +15,9 @@ Make sure you have Python and ANTLR4 installed on your machine.
 
 Ensure you have ANTLR installed. If not, you can install it using:
 
-    ```bash
-        pip install antlr4-python3-runtime
-    ```
+```bash
+pip install antlr4-python3-runtime
+```
 ### Generating ANTLR Files
 
 To generate the ANTLR files, run the following command in your terminal:
